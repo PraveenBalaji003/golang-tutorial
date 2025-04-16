@@ -1,0 +1,34 @@
+go run filename.go      # Run a single Go file
+
+go run ./...            # Run all Go files recursively in the current directory
+
+go build                # Build the current package
+
+go build -o output.exe  # Build with a custom output file name
+
+go build ./...          # Build all Go packages recursively
+
+go env                  # View Go environment variables
+
+go mod init <module>    # Initialize a new module
+
+go mod tidy             # Add missing and remove unused modules
+
+go fmt ./...            # Format all Go files
+
+go install              # Compile and install the package
+
+go clean                # Remove object files and cached files
+
+go test ./...           # Run all tests
+
+go env GOARCH GOOS      # Show the current system architecture and OS (e.g., amd64, linux)
+
+GOOS=windows GOARCH=amd64 go build -o output.exe main.go         # Build for Windows 64-bit from any OS
+
+GOOS=darwin GOARCH=amd64 go build -o mac_intel_binary main.go   # Build for macOS (Intel-based systems)
+
+GOOS=darwin GOARCH=arm64 go build -o mac_arm_binary main.go     # Build for macOS Apple Silicon (M1/M2)
+
+GOOS=linux GOARCH=amd64 go build -o linux_binary main.go
+                            # Build for Linux 64-bit from any OS
