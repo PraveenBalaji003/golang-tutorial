@@ -24,11 +24,10 @@ go test ./...           # Run all tests
 
 go env GOARCH GOOS      # Show the current system architecture and OS (e.g., amd64, linux)
 
-GOOS=windows GOARCH=amd64 go build -o output.exe main.go         # Build for Windows 64-bit from any OS
+GOOS=windows GOARCH=amd64 go build -o output.exe main.go          # Build for Windows 64-bit from any OS
 
-GOOS=darwin GOARCH=amd64 go build -o mac_intel_binary main.go   # Build for macOS (Intel-based systems)
+GOOS=darwin GOARCH=amd64 go build -o mac_intel_binary main.go     # Build for macOS (Intel-based systems)
 
-GOOS=darwin GOARCH=arm64 go build -o mac_arm_binary main.go     # Build for macOS Apple Silicon (M1/M2)
+GOOS=darwin GOARCH=arm64 go build -o mac_arm_binary main.go       # Build for macOS Apple Silicon (M1/M2)
 
-GOOS=linux GOARCH=amd64 go build -o linux_binary main.go
-                            # Build for Linux 64-bit from any OS
+GOOS=linux GOARCH=amd64 go build -o linux_binary main.go          # Build for Linux 64-bit from any OS
