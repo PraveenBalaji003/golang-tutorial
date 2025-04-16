@@ -1,3 +1,4 @@
+SSH Key -
 root@pf-4w2nd2:/home# mkdir -p /home/praveenbm/Desktop/.ssh
 root@pf-4w2nd2:/home# ssh-keygen -t ed25519 -C "praveenmj003@gmail.com"
 Generating public/private ed25519 key pair.
@@ -21,5 +22,6 @@ The key's randomart image is:
 |X===oo   .O*+=o .|
 +----[SHA256]-----+
 
+================================================================================================================
 
 
