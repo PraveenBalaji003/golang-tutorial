@@ -38,5 +38,30 @@ praveenbm@pf-4w2nd2:~/Desktop/Desk-Files/golang-tutorial$ ssh -T git@github.com
 Hi PraveenBalaji003! You've successfully authenticated, but GitHub does not provide shell access.
 praveenbm@pf-4w2nd2:~/Desktop/Desk-Files/golang-tutorial$ 
 
+Add config in .ssh -
+config                                                    
+#personal account
+Host github.com-personal
+    HostName github.com
+    User git
+    AddKeysToAgent yes
+    IdentityFile ~/.ssh/praveenmj003
+#practice account
+Host github.com-practice
+    HostName github.com
+    User git
+    AddKeysToAgent yes
+    IdentityFile ~/.ssh/praveenmj005
+
+
+Change Alias for Git Remote Authentication based on .ssh config -
+git remote set-url origin git@github.com-personal:PraveenBalaji003/golang-tutorial.git
+
+
+
+
+
+
+
 
 
