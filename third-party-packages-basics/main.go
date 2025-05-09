@@ -1,7 +1,8 @@
 package main
 
 //get from main - go get github.com/Praveenmj005/calculator@main
-//get from latest git tag version - go get github.com/Praveenmj005/calculator@lates
+//get from latest git tag version - go get github.com/Praveenmj005/calculator@latest
+//get from specific version - go get github.com/Praveenmj005/calculator@v1.0.1
 //clean mod cache - go clean -modcache
 import (
 	"fmt"
